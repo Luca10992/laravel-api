@@ -1,0 +1,53 @@
+@import "~bootstrap/scss/bootstrap";
+
+.active {
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    main {
+        flex-grow: 1;
+        .card {
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+            }
+            h5 {
+                font-size: 17px;
+            }
+            p {
+                font-size: 12px;
+                margin: 0;
+            }
+        }
+        .show-container {
+            max-height: 400px;
+            overflow: hidden;
+            img {
+                object-fit: fill;
+            }
+            h5,
+            h6 {
+                font-weight: bold;
+            }
+            p {
+                font-weight: 500;
+            }
+        }
+
+        .table {
+            a:hover i,
+            .btn:hover i {
+                background-color: rgba(186, 186, 186, 0.2);
+                border-radius: 8px;
+            }
+        }
+    }
+}
